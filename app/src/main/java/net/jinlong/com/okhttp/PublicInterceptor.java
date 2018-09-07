@@ -1,4 +1,4 @@
-package net.jinlong.com;
+package net.jinlong.com.okhttp;
 
 import java.io.IOException;
 

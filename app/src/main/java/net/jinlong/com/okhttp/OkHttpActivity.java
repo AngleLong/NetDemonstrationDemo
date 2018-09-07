@@ -1,4 +1,4 @@
-package net.jinlong.com;
+package net.jinlong.com.okhttp;
 
 import android.os.Environment;
 import android.os.Handler;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import net.jinlong.com.R;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,6 +21,7 @@ import okhttp3.Callback;
 import okhttp3.ConnectionPool;
 import okhttp3.FormBody;
 import okhttp3.Headers;
+import okhttp3.HttpUrl;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
@@ -78,6 +81,7 @@ public class OkHttpActivity extends AppCompatActivity {
                 .method("GET", null)
                 .url("https://www.baidu.com/")
                 .build();
+
         /*3.发送请求*/
         Call call = httpClient.newCall(request);
         /*4.创建请求的回调*/

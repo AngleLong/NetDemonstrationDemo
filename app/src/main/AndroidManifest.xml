@@ -19,7 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OkHttpActivity"/>
+        <activity android:name=".okhttp.OkHttpActivity" />
+        <activity android:name=".retrofit.RetrofitActivity"></activity>
     </application>
 
 </manifest>
